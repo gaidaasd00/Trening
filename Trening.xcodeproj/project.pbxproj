@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		A747D7F228902AC9001EE1A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A747D7F128902AC9001EE1A9 /* AppDelegate.swift */; };
 		A747D7F428902AC9001EE1A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A747D7F328902AC9001EE1A9 /* SceneDelegate.swift */; };
-		A747D7F628902AC9001EE1A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A747D7F528902AC9001EE1A9 /* ViewController.swift */; };
 		A747D7F928902AC9001EE1A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A747D7F728902AC9001EE1A9 /* Main.storyboard */; };
 		A747D7FB28902ACA001EE1A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A747D7FA28902ACA001EE1A9 /* Assets.xcassets */; };
 		A747D7FE28902ACA001EE1A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A747D7FC28902ACA001EE1A9 /* LaunchScreen.storyboard */; };
+		A747D80A28903B48001EE1A9 /* TrafficViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A747D80928903B48001EE1A9 /* TrafficViewController.swift */; };
+		A747D80C2890472A001EE1A9 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A747D80B2890472A001EE1A9 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A747D7EE28902AC9001EE1A9 /* Trening.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trening.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A747D7F128902AC9001EE1A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A747D7F328902AC9001EE1A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A747D7F528902AC9001EE1A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A747D7F828902AC9001EE1A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A747D7FA28902ACA001EE1A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A747D7FD28902ACA001EE1A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A747D7FF28902ACA001EE1A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A747D80928903B48001EE1A9 /* TrafficViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficViewController.swift; sourceTree = "<group>"; };
+		A747D80B2890472A001EE1A9 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		A747D7F028902AC9001EE1A9 /* Trening */ = {
 			isa = PBXGroup;
 			children = (
-				A747D7F128902AC9001EE1A9 /* AppDelegate.swift */,
-				A747D7F328902AC9001EE1A9 /* SceneDelegate.swift */,
-				A747D7F528902AC9001EE1A9 /* ViewController.swift */,
-				A747D7F728902AC9001EE1A9 /* Main.storyboard */,
-				A747D7FA28902ACA001EE1A9 /* Assets.xcassets */,
-				A747D7FC28902ACA001EE1A9 /* LaunchScreen.storyboard */,
-				A747D7FF28902ACA001EE1A9 /* Info.plist */,
+				A747D805289039E5001EE1A9 /* App */,
+				A747D80828903A30001EE1A9 /* ViewControllers */,
+				A747D80728903A01001EE1A9 /* StoryBoards */,
+				A747D806289039EE001EE1A9 /* Resourses */,
 			);
 			path = Trening;
+			sourceTree = "<group>";
+		};
+		A747D805289039E5001EE1A9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A747D7F128902AC9001EE1A9 /* AppDelegate.swift */,
+				A747D7F328902AC9001EE1A9 /* SceneDelegate.swift */,
+				A747D7FF28902ACA001EE1A9 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A747D806289039EE001EE1A9 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				A747D7FA28902ACA001EE1A9 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		A747D80728903A01001EE1A9 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				A747D7F728902AC9001EE1A9 /* Main.storyboard */,
+				A747D7FC28902ACA001EE1A9 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		A747D80828903A30001EE1A9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A747D80928903B48001EE1A9 /* TrafficViewController.swift */,
+				A747D80B2890472A001EE1A9 /* TabBarViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A747D7F628902AC9001EE1A9 /* ViewController.swift in Sources */,
+				A747D80C2890472A001EE1A9 /* TabBarViewController.swift in Sources */,
 				A747D7F228902AC9001EE1A9 /* AppDelegate.swift in Sources */,
 				A747D7F428902AC9001EE1A9 /* SceneDelegate.swift in Sources */,
+				A747D80A28903B48001EE1A9 /* TrafficViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +327,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QGWXNWMFJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Trening/Info.plist;
+				INFOPLIST_FILE = Trening/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,7 +342,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QGWXNWMFJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Trening/Info.plist;
+				INFOPLIST_FILE = Trening/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,7 +370,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
